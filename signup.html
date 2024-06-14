@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Page</title>
+	<style>
+		/* Global Styles */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-family: 'Open Sans', sans-serif;
+			background-color: #f7f7f7;
+		}
+		
+		/* Container Styles */
+		.container {
+			max-width: 400px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			border-radius: 10px;
+		}
+		
+		/* Form Styles */
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+		}
+		
+		label {
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #333;
+		}
+		
+		input[type="text"], input[type="email"], input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+			border-color: #aaa;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		/* Button Styles */
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		
+		/* Footer Styles */
+		.footer {
+			margin-top: 20px;
+			text-align: center;
+			color: #666;
+		}
+		
+		.footer a {
+			color: #337ab7;
+			text-decoration: none;
+		}
+		
+		.footer a:hover {
+			color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Signup</h1>
+		<form>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username"><br><br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br><br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password"><br><br>
+			<label for="confirm-password">Confirm Password:</label>
+			<input type="password" id="confirm-password" name="confirm-password"><br><br>
+			<input type="submit" value="Signup">
+		</form>
+		<div class="footer">
+			<p>Already have an account? <a href="#">Login</a></p>
+		</div>
+	</div>
+</body>
+</html>

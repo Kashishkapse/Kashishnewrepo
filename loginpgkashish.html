@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+            background-color: rgb(255, 255, 255);
+            padding: 40px;   
+            
+        }
+        .main{
+            background: cover;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(125, 144, 161);
+            border-radius: 30px;
+        }
+        .img{
+            float: left;
+            justify-content: left;
+            border-radius: 20px;
+            background-color: aliceblue;
+        }
+        .login{
+            float: right;
+            justify-content: right;
+            align-items: center;
+            justify-content: center;
+           
+            box-sizing: border-box;
+            
+            background-color: rgb(210, 137, 219);
+            box-shadow: #007bff 5px 5px 5px 5px;
+            border-radius: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 20%;
+            
+            margin: 20px;
+        }
+
+        button:hover {
+            background-color: #2491b3;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="login">
+            <h1>Login yourself</h1>
+            <label for="name">Username :</label>
+            <input type="text" placeholder="enter your name"><br>
+            <label for="password">Password :</label>&nbsp;
+            <input type="password" placeholder="enter password"><br>
+            <button type="submit">Login</button>
+        </div>
+        <div class="img">
+            <img src="https://i.pinimg.com/236x/0f/f1/bf/0ff1bff879f22cc5f61f86db3ab4d265.jpg" width="500px" height="500px">
+        </div>
+    </div>
+</body>
+</html>
