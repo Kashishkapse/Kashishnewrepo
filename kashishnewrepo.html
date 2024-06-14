@@ -3,9 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>first repository code</title>
+    <title>Registration Form</title>
+    <style>
+        body{
+            padding: 0%;
+            background-color: rgb(228, 117, 222);
+            background-repeat: no-repeat;
+            background: cover;
+        }
+        .box{
+            background-color: rgb(194, 199, 204);
+            background-image: url(https://i.pinimg.com/736x/03/bb/d4/03bbd41eeca24841cc881a3cb9939639.jpg) ;
+            margin: 0px;
+            
+            padding:0px;
+            width: 40%;
+            font-size: larger;
+            color: antiquewhite;
+  
+        }
+        .main{
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            width: 50%;
+        }
+       
+        .form-elements{
+            
+            padding: 10px 10px 10px 10px;
+        }
+        form{
+            margin: 20px ;
+            padding: 10px;
+        
+            
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 20%;
+        }
+
+        button:hover {
+            background-color: #95adc7;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>Hello, i am kashish</h1>
+    <div class="box">
+        <div class="main">
+            <h1>Welcome to softronix Software services</h1>    
+        </div>
+        
+        <div class="form-elements">
+            <form>
+
+                <label for="name">Name :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name"><br>
+
+                <label for="gender">Gender :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" id="male" name="gender" value="value">
+                <label for="male">male</label>
+                <input type="radio" id="female" name="gender" value="value">
+                <label for="male">female</label><br>
+
+                <label for="Address">address :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <textarea name="address" id="address"></textarea><br>
+
+                <label for="country">Country :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="country" id="country">
+
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+
+                <optgroup label="India">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                  </optgroup>
+                
+                </select>
+<br>
+                <label for="date of birth">date of birth :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" placeholder="D.O.B."><br>
+
+                <label for="number">Contact no. :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" placeholder="Contact no"><br>
+
+                <label for="email">Email :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" placeholder="Enter your email"><br>
+
+                <label for="password">Password :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" placeholder="password"><br>
+
+                <label for="password">Confirm Password :</label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" placeholder="Confirm Password">
+                <br>
+
+                <button type="submit">Register</button> 
+
+            </form>
+        </div>
+    </div>
 </body>
 </html>
